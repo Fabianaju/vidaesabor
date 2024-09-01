@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontes e Ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="img" href="assets/restaurante.png">
+    <title>Restaurante Vida & Sabor</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header__container">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo do Restaurante" class="logo-img">
+        </div>
+        <!-- Botão de Menu Hambúrguer -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+            <i class="ri-menu-line"></i>
+        </button>
+        <!-- Navegação Principal -->
+<nav class="main-nav" id="main-nav">
+    <ul>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="social-icons">
+    <a href="#" class="social-icon">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="#" class="social-icon">
+        <i class="fa-brands fa-twitter"></i>
+    </a>
+    <a href="#" class="social-icon">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="#" class="social-icon">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+</div>
+</nav>
+        <a href="#reservas" class="subscribe-btn">Faça sua Reserva</a>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+       <!-- Seção Hero -->
+<section class="hero">
+    <div class="hero__text">
+        <h1 class="animated-text">Bem-vindo ao <span class="highlight">Restaurante Vida & Sabor</span></h1>
+        <p>Experimente o melhor da culinária internacional em um ambiente único e acolhedor.</p>
+    </div>
+    <div class="hero__image">
+        <img src="assets/hero-bg.png" alt="Imagem do Hero">
+    </div>
+</section>
+      <!-- Seção Sobre Nós -->
+<section class="sobre" id="sobre">
+    <div class="container text-center">
+        <div class="sobre__content">
+            <img src="assets/sobre-nos.png" alt="Sobre Nós" class="sobre__imagem girando">
+            <div class="sobre__texto">
+                <h2>Sobre Nós</h2>
+                <p>O Restaurante Vida & Sabor é conhecido por sua culinária excepcional, ambiente sofisticado e atendimento impecável. Nossa missão é proporcionar uma experiência gastronômica inesquecível a cada visita.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Seção do Menu -->
+<section class="menu" id="menu">
+    <div class="container">
+        <h2 class="text-center">Nosso Menu</h2>
+        <div class="menu__tabs">
+            <button class="menu__tab active" data-tab="breakfast">
+                <i class="fas fa-coffee"></i> Café da Manhã
+            </button>
+            <button class="menu__tab" data-tab="lunch">
+                <i class="fas fa-utensils"></i> Almoço
+            </button>
+            <button class="menu__tab" data-tab="dinner">
+                <i class="fas fa-drumstick-bite"></i> Jantar
+            </button>
+        </div>
+        <div class="menu__content" id="breakfast">
+            <!-- Opções de Café da Manhã -->
+                <div class="menu__item">
+                <img src="assets/breakfast1.png" alt="Panquecas com Mel" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Panquecas com Mel</h3>
+                    <p>Deliciosas panquecas servidas com mel e frutas frescas.</p>
+                    <span class="menu__item-price">R$ 25,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/breakfast2.png" alt="Omelete com Queijo" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Omelete com Queijo</h3>
+                    <p>Omelete fluffy recheada com queijo e ervas finas.</p>
+                    <span class="menu__item-price">R$ 22,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/breakfast3.png" alt="Croissant com Chocolate" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Croissant com Chocolate</h3>
+                    <p>Croissant fresco recheado com chocolate derretido.</p>
+                    <span class="menu__item-price">R$ 18,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/breakfast4.png" alt="Smoothie de Frutas" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Smoothie de Frutas</h3>
+                    <p>Smoothie refrescante de frutas tropicais.</p>
+                    <span class="menu__item-price">R$ 20,00</span>
+                </div>
+            </div>
+            <!-- Adicionando mais opções -->
+            <div class="menu__item">
+                <img src="assets/breakfast5.png" alt="Aveia com Frutas" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Aveia com Frutas</h3>
+                    <p>Aveia quente com uma mistura de frutas sazonais.</p>
+                    <span class="menu__item-price">R$ 22,00</span>
+                </div>
+            </div>
+              
+            <!-- Adicione mais  opções de Café da Manhã aqui -->
+        </div>
+        <div class="menu__content" id="lunch" style="display: none;">
+            <!-- Opções de Almoço -->
+            <div class="menu__item">
+                <img src="assets/dinner1.png" alt="Filé Mignon ao Molho Madeira" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Filé Mignon ao Molho Madeira</h3>
+                    <p>Filé mignon grelhado servido com molho madeira e legumes assados.</p>
+                    <span class="menu__item-price">R$ 45,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/dinner2.png" alt="Peito de Frango Grelhado" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Peito de Frango Grelhado</h3>
+                    <p>Peito de frango grelhado servido com arroz e salada.</p>
+                    <span class="menu__item-price">R$ 38,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/dinner3.png" alt="Lasanha à Bolonhesa" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Lasanha à Bolonhesa</h3>
+                    <p>Lasanha recheada com carne moída e molho de tomate.</p>
+                    <span class="menu__item-price">R$ 42,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/dinner4.png" alt="Salada Caesar" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Salada Caesar</h3>
+                    <p>Salada clássica com frango grelhado, croûtons e molho Caesar.</p>
+                    <span class="menu__item-price">R$ 30,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/dinner5.png" alt="Risoto de Cogumelos" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Risoto de Cogumelos</h3>
+                    <p>Risoto cremoso com cogumelos frescos e parmesão.</p>
+                    <span class="menu__item-price">R$ 40,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/dinner6.png" alt="Espaguete Carbonara" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Espaguete Carbonara</h3>
+                    <p>Espaguete com molho cremoso de queijo e bacon crocante.</p>
+                    <span class="menu__item-price">R$ 35,00</span>
+                </div>
+            </div>
+             <!-- Adicione mais opções de Jantar aqui -->
+        </div>
+        <div class="menu__content" id="dinner" style="display: none;">
+            <!-- Opções de Jantar -->
+            <div class="menu__item">
+                <img src="assets/dinner1.png" alt="Filé Mignon ao Molho Madeira" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Filé Mignon ao Molho Madeira</h3>
+                    <p>Filé mignon grelhado servido com molho madeira e legumes assados.</p>
+                    <span class="menu__item-price">R$ 45,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/dinner2.png" alt="Peito de Frango Grelhado" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Peito de Frango Grelhado</h3>
+                    <p>Peito de frango grelhado servido com arroz e salada.</p>
+                    <span class="menu__item-price">R$ 38,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/dinner3.png" alt="Lasanha à Bolonhesa" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Lasanha à Bolonhesa</h3>
+                    <p>Lasanha recheada com carne moída e molho de tomate.</p>
+                    <span class="menu__item-price">R$ 42,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/dinner4.png" alt="Salada Caesar" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Salada Caesar</h3>
+                    <p>Salada clássica com frango grelhado, croûtons e molho Caesar.</p>
+                    <span class="menu__item-price">R$ 30,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/dinner5.png" alt="Risoto de Cogumelos" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Risoto de Cogumelos</h3>
+                    <p>Risoto cremoso com cogumelos frescos e parmesão.</p>
+                    <span class="menu__item-price">R$ 40,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/dinner6.png" alt="Espaguete Carbonara" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Espaguete Carbonara</h3>
+                    <p>Espaguete com molho cremoso de queijo e bacon crocante.</p>
+                    <span class="menu__item-price">R$ 35,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src="assets/dinner7.png" alt="Filé de Salmão Grelhado" class="menu__item-image">
+                <div class="menu__item-content">
+                    <h3>Filé de Salmão Grelhado</h3>
+                    <p>Filé de salmão grelhado servido com purê de batatas e legumes.</p>
+                    <span class="menu__item-price">R$ 50,00</span>
+                </div>
+            </div>
+            <!-- Adicione mais opções de Jantar aqui -->
+        </div>
+    </div>
+</section>
+
+  <!-- Seção de Reserva -->
+<section class="reserva" id="reservas">
+    <div class="container reserva__container">
+        <h2>Reserve uma Mesa</h2>
+        <form class="reserva__form">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="data">Data</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+                <label for="quantidade">Quantidade de Pessoas</label>
+                <input type="number" id="quantidade" name="quantidade" placeholder="Número de Pessoas" required min="1">
+            </div>
+            <button type="submit" class="reserva__btn">Reservar</button>
+        </form>
+    </div>
+</section>
+
+<!-- Seção Seleção dos Chefs -->
+<section class="chefs" id="chefs">
+    <div class="container">
+        <h2>Nosso Time de Chefs</h2>
+        <div class="chefs__grid">
+            <!-- Chef 1 -->
+            <div class="chef__card">
+                <img src="assets/chef1.png" alt="Chef 1" class="chef__imagem">
+                <h3>Chef Maria Silva</h3>
+                <p>Especialista em culinária italiana e mediterrânea.</p>
+                <div class="chef__social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- Chef 2 -->
+            <div class="chef__card">
+                <img src="assets/chef2.png" alt="Chef 2" class="chef__imagem">
+                <h3>Chef João Pereira</h3>
+                <p>Expert em pratos gourmet franceses e sobremesas sofisticadas.</p>
+                <div class="chef__social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- Chef 3 -->
+            <div class="chef__card">
+                <img src="assets/chef3.png" alt="Chef 3" class="chef__imagem">
+                <h3>Chef Ana Santos</h3>
+                <p>Maestria em culinária asiática e fusões contemporâneas.</p>
+                <div class="chef__social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Seção Testemunhos -->
+<section class="testemunhos" id="testemunhos">
+    <div class="container text-center">
+        <h2>Depoimentos</h2>
+        <div class="testemunhos__container">
+            <div class="testemunho-item">
+                <p class="testemunho-texto">"Uma experiência culinária como nenhuma outra! O ambiente e a comida são perfeitos."</p>
+                <h3 class="testemunho-autor">João Alves</h3>
+                <span class="testemunho-cargo">Cliente Fiel</span>
+            </div>
+            <div class="testemunho-item">
+                <p class="testemunho-texto">"Melhor lugar para comemorar ocasiões especiais. Tudo é impecável."</p>
+                <h3 class="testemunho-autor">Maria Costa</h3>
+                <span class="testemunho-cargo">Cliente Satisfeita</span>
+            </div>
+            <!-- Novos Depoimentos -->
+            <div class="testemunho-item">
+                <p class="testemunho-texto">"A comida é deliciosa e o atendimento é excepcional. Recomendo a todos!"</p>
+                <h3 class="testemunho-autor">Carlos Pereira</h3>
+                <span class="testemunho-cargo">Cliente Regular</span>
+            </div>
+            <div class="testemunho-item">
+                <p class="testemunho-texto">"Um dos melhores restaurantes que já visitei. Ambiente sofisticado e pratos incríveis."</p>
+                <h3 class="testemunho-autor">Ana Souza</h3>
+                <span class="testemunho-cargo">Gastrônoma Entusiasta</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Seção de Avaliação -->
+<section class="avaliacao" id="avaliacao">
+    <div class="container text-center">
+        <h2>Avalie o Restaurante</h2>
+        <div class="avaliacao__container">
+            <div class="avaliacao__stars" id="rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p class="avaliacao__texto" id="rating-text">Clique nas estrelas para avaliar</p>
+        </div>
+    </div>
+</section>
+
+        <!-- Seção Contato -->
+        <section class="contact" id="contato">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <form action="mailto:seu-email@exemplo.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+   <!-- Rodapé -->
+<footer>
+    <div class="footer__container">
+        <div class="footer__about">
+            <img src="assets/logo.png" alt="Logo do Restaurante" class="footer__logo">
+            <h2>Restaurante Vida & Sabor</h2>
+            <p>O melhor da culinária internacional em um ambiente elegante e acolhedor.</p>
+        </div>
+        <div class="footer__links">
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer__social">
+            <h3>Redes Sociais</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="ri-facebook-line"></i></a>
+                <a href="#" class="social-icon"><i class="ri-twitter-line"></i></a>
+                <a href="#" class="social-icon"><i class="ri-instagram-line"></i></a>
+                <a href="#" class="social-icon"><i class="ri-linkedin-line"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__line"></div>
+    <div class="footer__bottom">
+        <p>&copy; 2024 Restaurante Vida & Sabor. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+    <script>
+    // Script para o menu hambúrguer
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+
+            // Alternar o ícone do menu hambúrguer
+            const icon = menuToggle.querySelector('i');
+            if (mainNav.classList.contains('active')) {
+                icon.classList.remove('ri-menu-line');
+                icon.classList.add('ri-close-line');
+            } else {
+                icon.classList.remove('ri-close-line');
+                icon.classList.add('ri-menu-line');
+            }
+        });
+
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.remove('ri-close-line');
+                    icon.classList.add('ri-menu-line');
+                }
+            });
+        });
+    });
+</script>
+<script >
+    document.addEventListener('DOMContentLoaded', function() {
+    const stars = document.querySelectorAll('.avaliacao__stars .star');
+    const ratingText = document.getElementById('rating-text');
+
+    stars.forEach(star => {
+        star.addEventListener('mouseover', function() {
+            const value = this.getAttribute('data-value');
+            updateStars(value);
+        });
+
+        star.addEventListener('mouseout', function() {
+            updateStars(getCurrentRating());
+        });
+
+        star.addEventListener('click', function() {
+            const value = this.getAttribute('data-value');
+            setCurrentRating(value);
+            updateStars(value);
+            ratingText.textContent = `Você avaliou com ${value} ${value > 1 ? 'estrelas' : 'estrela'}`;
+        });
+    });
+
+    function updateStars(rating) {
+        stars.forEach(star => {
+            star.classList.toggle('active', star.getAttribute('data-value') <= rating);
+        });
+    }
+
+    function setCurrentRating(rating) {
+        localStorage.setItem('rating', rating);
+    }
+
+    function getCurrentRating() {
+        return localStorage.getItem('rating') || 0;
+    }
+
+    updateStars(getCurrentRating());
+});
+
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const tabs = document.querySelectorAll(".menu__tab");
+    const contents = document.querySelectorAll(".menu__content");
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", function() {
+            // Remove a classe 'active' de todas as abas e conteúdos
+            tabs.forEach(t => t.classList.remove("active"));
+            contents.forEach(c => c.style.display = "none");
+
+            this.classList.add("active");
+            document.getElementById(this.getAttribute("data-tab")).style.display = "flex";
+        });
+    });
+
+    tabs[0].click();
+});
+</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJ+Yd5JT5I6od/ssFQJCQbaY2+9E4mVJrXqv0=" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Personalizado -->
+    <script src="scripts.js"></script>
+</body>
+</html>
